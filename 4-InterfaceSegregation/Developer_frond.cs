@@ -1,8 +1,8 @@
 namespace InterfaceSegregation
 {
-    public class Developer : IWorkTeamActivies, IDevelopActivities
+    public class Developer_frond : IWorkTeamActivies, IDevelopFrondActivities
     {
-        public Developer()
+        public Developer_frond()
         {
         }
 
@@ -16,10 +16,10 @@ namespace InterfaceSegregation
             throw new ArgumentException();
         }
 
-        public void Develop() 
+        public void Develop_frond() 
         {
             Console.WriteLine("I'm developing the functionalities required");
-            Console.WriteLine("Yo estoy realizando las actividades requeridas para el backend");
+            Console.WriteLine("Yo estoy realizando las actividades requeridas para la parte visual de la aplicacion");
         }
 
     }
